@@ -1,7 +1,12 @@
-var controller = require("../controllers/sample");
+const controller = require("../controllers/sample");
+const sampleMiddleware = require("../middlewares/sample");
+
 module.exports = app => {
     app.route('/api/sample')
-     .get(controller.getSamples)
+     .get(
+         sampleMiddleware, 
+         controller.getSamples
+        )
      .post(controller.createSample);
      
     app.route('/api/sample/:sample')
