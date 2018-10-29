@@ -4,6 +4,7 @@ const express = require('express'),
 const keys = require('./config.example/keys');
 
 // Services
+require('./services/sample');
 
 // Routes
 require("./routes/sample")(app);
