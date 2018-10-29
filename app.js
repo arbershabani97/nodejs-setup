@@ -1,15 +1,16 @@
 const express = require('express'),
       app = express();
 // const keys = require('./config/keys');
-
+const keys = require('./config.example/keys');
 
 // Services
 
 // Routes
 require("./routes/sample")(app);
 
+
 if (process.env.NODE_ENV==='production') {
-  // Can be Used for React/Angular Builds
+  // Serve React/Angular Builds
   app.use(express.static('client/build'));
 
   const path = require('path');
