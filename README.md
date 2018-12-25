@@ -1,9 +1,10 @@
-# NodeJS Boilerplate
+# NodeJS Setup
 
-> ##### NodeJS Setup - https://github.com/arbershabani97/nodejs-setup
-> ##### NodeJS + MongoDB Setup (not completed yet)
-> ##### NodeJS + MongoDB + Passport Auth Setup (not completed yet)
-> ###### Author ~ Arbër Shabani - https://github.com/arbershabani97
+#### How to run the server:
+
+1. Install NodeJS, then run the following commands
+2. `npm install`
+3. `npm run start-dev`
 
 #### A beautiful NodeJS Structuring, to make scalable applications, easier project management & simple to understand code
 
@@ -22,8 +23,13 @@ You can create **subfolders** for each **Service, Route, Middleware and Controll
 
 **Routes** - You put the routing logic here, to make sure that the user goes through the correct middleware and controller by checking the request (get, post, put, delete, patch) and the link
 
-    * Middlewares - You put the middleware logic to make conditions if the user doesn't have rights to access the routes (which then are used in routes files)
+**Middlewares** - You put the middleware logic to make conditions if the user doesn't have rights to access the routes (which then are used in routes files)
 
-    * Controllers - You put the controller logic here, to make sure you return to the user what he is looking for
+**Controllers** - You put the controller logic here, to make sure you return to the user what he is looking for
 
 **Config Keys** - You put the development and testing keys here, and when you set up your Web you put the production keys in the server only (prod.js is ignored by .gitignore for security reasons) 
+
+> ##### NodeJS Setup - https://github.com/arbershabani97/nodejs-setup
+> ##### NodeJS + MongoDB Setup (not completed yet)
+> ##### NodeJS + MongoDB + Passport Auth Setup (not completed yet)
+> ###### Author ~ Arbër Shabani - https://github.com/arbershabani97
