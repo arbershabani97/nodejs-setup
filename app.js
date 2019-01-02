@@ -6,11 +6,8 @@ const express = require('express'),
       
 const PORT = process.env.PORT || 5000;
 
-// Services
-require('./services/sample');
-
 // Routes
-require('./routes/sample')(app);
+require('./src/routes')(app);
 
 // Server Setup
 require('./node-server')(express, app, http, path, PORT);

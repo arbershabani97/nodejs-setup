@@ -1,4 +1,4 @@
-module.exports = (req, res, next) => {
+exports.sampleMiddleware = (req, res, next) => {
     // Middleware Conditions
     if (true) {
         return res.send("Middleware logic here..");
@@ -6,3 +6,4 @@ module.exports = (req, res, next) => {
 
     next();
 };
+module.exports = exports;

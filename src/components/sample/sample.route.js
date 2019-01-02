@@ -1,5 +1,5 @@
-const controller = require("../controllers/sample");
-const sampleMiddleware = require("../middlewares/sample");
+const controller = require("./sample.controller");
+const {sampleMiddleware} = require("./sample.middleware");
 
 module.exports = app => {
     app.route('/api/sample')
